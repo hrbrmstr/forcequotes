@@ -4,12 +4,28 @@
 \name{forcequotes}
 \alias{forcequotes}
 \alias{forcequotes-package}
-\title{...}
+\title{Return Random Star Wars Quotes}
 \description{
+\if{html}{
+\figure{force-quotes.png}{options: align="right" alt="Figure: force-quotes.png"}
+}
+}
+\details{
+\if{latex}{
+\figure{force-quotes.png}{options: width=10cm}
+}
+
+Now you can use the R 'Force' to get random quotes from your favorite
+space opera. This is a thin wrapper to the 'Star Wars Quote API'
+(\url{http://swquotesapi.digitaljedi.dk/index.html} / \url{http://swquotes.digitaljedi.dk/home})
 \itemize{
 \item URL: \url{https://gitlab.com/hrbrmstr/forcequotes}
 \item BugReports: \url{https://gitlab.com/hrbrmstr/forcequotes/issues}
 }
+}
+\references{
+\url{http://swquotesapi.digitaljedi.dk/index.html};
+\url{http://swquotes.digitaljedi.dk/home}
 }
 \author{
 Bob Rudis (bob@rud.is)

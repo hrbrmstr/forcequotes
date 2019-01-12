@@ -1,10 +1,10 @@
 ---
 output: rmarkdown::github_document
 editor_options: 
-  chunk_output_type: inline
+  chunk_output_type: console
 ---
 ```{r pkg-knitr-opts, include=FALSE}
-knitr$opts_chunk$set(collapse=TRUE, fig.retina=2, message=FALSE, warning=FALSE)
+knitr::opts_chunk$set(collapse=TRUE, fig.retina=2, message=FALSE, warning=FALSE)
 options(width=120)
 ```
 
@@ -12,13 +12,24 @@ options(width=120)
 [![Coverage Status](https://codecov.io/gh/hrbrmstr/forcequotes/branch/master/graph/badge.svg)](https://codecov.io/gh/hrbrmstr/forcequotes)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/forcequotes)](https://cran.r-project.org/package=forcequotes)
 
+![](man/figures/force-quotes.png)
+
 # forcequotes
 
+Return Random Star Wars Quotes
+
 ## Description
+
+Now you can use the R 'Force' to get random quotes from your favorite
+space opera. This is a thin wrapper to the 'Star Wars Quote API'
+(<http://swquotesapi.digitaljedi.dk/index.html>).
 
 ## What's Inside The Tin
 
 The following functions are implemented:
+
+- `quote_console`:	Get a random Star Wars quote and display it stylishly to the console
+- `random_quote:	Return a Random Star Wars Quote
 
 ## Installation
 
@@ -36,6 +47,29 @@ library(forcequotes)
 # current version
 packageVersion("forcequotes")
 
+```
+
+### Basic use
+
+```{r basics}
+random_quote()
+
+random_quote(faction=0)
+
+random_quote(faction=1)
+
+random_quote(faction=2)
+
+random_quote(faction=3)
+
+random_quote(faction=4)
+
+```
+
+### Console shenanigans
+
+```{r console}
+quote_console()
 ```
 
 ## forcequotes Metrics
