@@ -4,10 +4,12 @@
 \alias{quote_console}
 \title{Get a random Star Wars quote and display it stylishly to the console}
 \usage{
-quote_console(faction = NULL)
+quote_console(faction = NULL, foreground = c("white", "black"))
 }
 \arguments{
 \item{faction}{faction (see \code{\link[=random_quote]{random_quote()}})}
+
+\item{foreground}{should the foreground text be in black or white (defaults to \code{white}).}
 }
 \description{
 Get a random Star Wars quote and display it stylishly to the console

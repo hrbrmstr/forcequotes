@@ -13,7 +13,9 @@ random_quote <- function(faction = NULL) {
 
   if (!is.null(faction)) {
     faction <- as.integer(faction[1])
-    stopifnot(faction %in% 0L:4L)
+    if ((faction < 0) || (faction > 4)) {
+      stop("'faction' must be 0:4")
+    }
   }
 
   httr::GET(
